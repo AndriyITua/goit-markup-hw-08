@@ -1,0 +1,72 @@
+.first-section {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.first-section__style {
+  background-color: #2f303a;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/background-studio.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.first-section__title {
+  color: var(--secondary-text-color);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  width: 696px;
+
+  display: inline-block;
+  margin-bottom: 30px;
+  margin-left: 237px;
+  margin-right: 237px;
+  margin-top: 0;
+}
+
+.first-section__btn {
+  color: var(--secondary-text-color);
+  background-color: var(--blue-text-color);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  min-width: 200px;
+
+  display: inline-block;
+  padding: 10px;
+  margin-top: 0px;
+  margin-left: 485px;
+  margin-right: 485px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+
+  transition: var(--time-animation) var(--cubik-transform);
+
+  &:hover,
+  &:focus {
+    color: var(--blue-text-color);
+    background-color: var(--secondary-text-color);
+    border: none;
+    transition: background-color var(--time-animation) var(--cubik-transform),
+      color var(--time-animation) var(--cubik-transform),
+      border var(--time-animation) var(--cubik-transform);
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}
