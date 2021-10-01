@@ -1,8 +1,10 @@
 .four-section {
   background-color: var(--color-four-section);
   margin-bottom: 0px;
-  padding-bottom: 94px;
-  padding-top: 94px;
+  // padding-bottom: 94px;
+  // padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 .four-section__team {
@@ -10,14 +12,17 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 36px;
-  line-height: 1.16;
+  // font-size: 36px;
+  font-size: 28px;
+  // line-height: 1.16;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
 
   display: block;
   margin-top: 0;
-  margin-bottom: 50px;
+  // margin-bottom: 50px;
+  margin-bottom: 30px;
   margin-right: 0;
   margin-left: 0;
 }
@@ -32,27 +37,26 @@
 
 .four-section-list__item {
   display: inline-block;
-  width: 270px;
-  margin-right: 30px;
+  // width: 270px;
+  width: 450px;
+  height: 622px;
+  // margin-right: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  &:nth-child(4n) {
-    margin-right: 0;
-  }
+  // &:nth-child(4n) {
+  //   margin-right: 0;
+  // }
+  margin-right: 0;
+  margin-bottom: 30px;
 }
 
 .four-section-list__underside {
   padding-top: 30px;
-  padding-bottom: 30px;
+  // padding-bottom: 30px;
+  padding-bottom: 24 px;
   background-color: #fff;
 }
-
-.four-section-list__title {
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
 .four-section-list__title {
   color: var(--title-text-color);
   font-family: Roboto;
@@ -62,6 +66,9 @@
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .four-section-list__text {
