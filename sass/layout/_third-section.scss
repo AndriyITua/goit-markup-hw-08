@@ -1,5 +1,8 @@
 .third-section {
   padding-bottom: 94px;
+  @media screen and (min-width: 0px) and (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .third-section__title {
