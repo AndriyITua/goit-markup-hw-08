@@ -18,7 +18,7 @@
 
 <body>
     <!-- Шапка сторінки -->
-    <!-- <header class="page-header">
+    <header class="page-header">
         <div class="container">
         <div class="header-style">
         <nav class="header-nav">
@@ -40,8 +40,16 @@
             </li>
         </ul>
         </div>
+        <button class="menu-open">
+            0
+        </button>
         </div>
-    </header> -->
+        <div class="mob-menu">
+            <button class="menu-close">
+                x
+            </button>
+        </div>
+    </header>
     <!-- Унікальність сторінки -->
     <main class="page-main">
         <!-- Section 1 -->
@@ -141,15 +149,24 @@
             <h2 class="third-section__title">Чем мы занимаемся</h2>
             <ul class="third-section-list">
                 <li class="third-section-list__item">
-                    <img src="./images/img1.jpg" alt="copywriter" width="370" height="294">
+                    <picture>
+                        <source srcset="./images/desktop/box1.jpg 1x, ./images/desktop/box@2x.jpg 2x" media="(min-width:1200px)" />
+                        <img src="./images/img1.jpg" alt="copywriter">
+                    </picture>
                     <p class="third-section-list__text">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
                 </li>
                 <li class="third-section-list__item">
-                    <img src="./images/img2.jpg" alt="photo" width="370" height="294"> 
+                    <picture>
+                        <source srcset="./images/desktop/box2.jpg 1x, ./images/desktop/box2@2x.jpg 2x" media="(min-width:1200px)" />
+                        <img src="./images/img2.jpg" alt="photo">
+                    </picture>
                     <p class="third-section-list__text">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
                 </li>
                 <li class="third-section-list__item">
-                    <img src="./images/img3.jpg" alt="drow" width="370" height="294"> 
+                    <picture>
+                        <source srcset="./images/desktop/box3.jpg 1x, ./images/desktop/box3@2x.jpg 2x" media="(min-width:1200px)" />
+                        <img src="./images/img3.jpg" alt="drow">
+                    </picture>
                     <p class="third-section-list__text">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
                 </li>
             </ul>
@@ -164,18 +181,15 @@
                     <picture>
                         <source 
                         srcset="./images/desktop/img.jpg 1x, ./images/desktop/img@2x.jpg 2x" 
-                        media="(min-width:1200px)"
-                        type="img/web" 
+                        media="(min-width:1200px)" 
                         />
                         <source 
                         srcset="./images/tablet/img.jpg 1x, ./images/tablet/img@2x.jpg 2x" 
-                        media="(min-width:768px)"
-                        type="img/web" 
+                        media="(min-width:768px)" 
                         />
                         <source 
                         srcset="./images/mobile/img.jpg 1x, ./images/mobile/img@2x.jpg 2x" 
                         media="(min-width:480px)" 
-                        type="img/web"
                         />
                     <img src="./images/igor.jpg" alt="Igor">
                     <!-- width="270" height="260" -->
@@ -204,12 +218,10 @@
                         <source 
                         srcset="./images/desktop/img1.jpg 1x, ./images/desktop/img1@2x.jpg 2x" 
                         media="(min-width:1200px)"
-                        type="img/web" 
                         />
                         <source 
                         srcset="./images/tablet/img1.jpg 1x, ./images/tablet/img1@2x.jpg 2x" 
                         media="(min-width:768px)"
-                        type="img/web" 
                         />
                         <source 
                         srcset="./images/mobile/img1.jpg 1x, ./images/mobile/img1@2x.jpg 2x" 
@@ -242,12 +254,10 @@
                         <source 
                         srcset="./images/desktop/img2.jpg 1x, ./images/desktop/img2@2x.jpg 2x" 
                         media="(min-width:1200px)"
-                        type="img/web" 
                         />
                         <source 
                         srcset="./images/tablet/img2.jpg 1x, ./images/tablet/img2@2x.jpg 2x" 
                         media="(min-width:768px)"
-                        type="img/web" 
                         />
                         <source 
                         srcset="./images/mobile/img2.jpg 1x, ./images/mobile/img2@2x.jpg 2x" 
@@ -280,12 +290,10 @@
                         <source 
                         srcset="./images/desktop/img3.jpg 1x, ./images/desktop/img3@2x.jpg 2x" 
                         media="(min-width:1200px)"
-                        type="img/web" 
                         />
                         <source 
                         srcset="./images/tablet/img3.jpg 1x, ./images/tablet/img3@2x.jpg 2x" 
                         media="(min-width:768px)"
-                        type="img/web" 
                         />
                         <source 
                         srcset="./images/mobile/img3.jpg 1x, ./images/mobile/img3@2x.jpg 2x" 

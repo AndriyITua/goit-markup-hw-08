@@ -20,10 +20,12 @@
 .page-footer__left-part {
   flex-direction: column;
   text-align: center;
+  @media screen and (min-width: 768px) {
+  }
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
-  }
-  @media screen and (min-width: 768px) {
+    flex-direction: unset;
+    text-align: unset;
   }
 }
 
@@ -46,6 +48,11 @@
   margin-bottom: 20px;
   margin-right: 0;
   margin-left: 0;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .page-footer__logo-color {
@@ -85,6 +92,11 @@
   @media screen and (min-width: 768px) {
     padding-top: 5px;
   }
+  @media screen and (min-width: 1200px) {
+    padding-top: 18px;
+    align-items: unset;
+    justify-content: unset;
+  }
 }
 
 .center-part__text {
@@ -103,6 +115,11 @@
 
   flex-direction: column;
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: unset;
+    text-align: unset;
+  }
 }
 
 .center-part__list {
