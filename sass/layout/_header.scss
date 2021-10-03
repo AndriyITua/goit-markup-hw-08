@@ -35,6 +35,11 @@
   margin-right: auto;
   margin-top: 24px;
   margin-bottom: 25px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 24px;
+    line-height: 1.16;
+  }
 }
 
 .page-header__logo-color,
@@ -50,8 +55,12 @@
   margin-bottom: 0px;
   display: none;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: block;
+    display: flex;
+    padding-left: 88px;
+  }
+  @media screen and (min-width: 1200px) {
     display: flex;
   }
 }
@@ -72,8 +81,13 @@
   list-style: none;
   display: none;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: block;
+    margin-left: 71px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: 305px;
   }
 }
 
@@ -86,6 +100,11 @@
   &:focus {
     fill: var(--blue-text-color);
     transition: fill var(--time-animation) var(--cubik-transform);
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 }
 
@@ -129,8 +148,11 @@
   margin-top: 28px;
 
   display: none;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: block;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
   }
 }
 
@@ -145,7 +167,10 @@
   margin-top: 28px;
 
   display: none;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: block;
+  }
+  @media screen and (min-width: 1200px) {
     display: block;
   }
 }
@@ -164,9 +189,6 @@
     color: var(--blue-text-color);
     transition: color var(--time-animation) var(--cubik-transform);
   }
-}
-
-.header-right__link {
   display: flex;
   align-items: center;
   padding-top: 20px;
@@ -178,6 +200,18 @@
   &:focus {
     fill: var(--blue-text-color);
     transition: fill var(--time-animation) var(--cubik-transform);
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.16;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+  }
+  &:last-child {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-bottom: 0px;
+    }
   }
 }
 
@@ -214,6 +248,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 1;
   @media screen and (min-width: 768px) {
     display: none;
   }
