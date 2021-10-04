@@ -85,6 +85,16 @@
       margin-bottom: 0px;
     }
   }
+  @media screen and (max-width: 479px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (max-width: 479px) {
+    &:nth-child(2n + 1) {
+      margin-right: 0;
+    }
+  }
 }
 
 .five-section-list__link {
